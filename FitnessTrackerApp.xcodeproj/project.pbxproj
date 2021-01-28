@@ -42,8 +42,8 @@
 /* Begin PBXFileReference section */
 		3ACC39D625BA304D00433F7C /* ActionTrainedModel 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "ActionTrainedModel 1.mlmodel"; sourceTree = "<group>"; };
 		3ACC39F925C1BD6E00433F7C /* FitnessTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AD07A5725C379B70099487E /* FitnessTrackerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FitnessTrackerAppTests.xctest; path = "/Users/qubsys/Desktop/FitnessTrackerApp/build/Debug-iphoneos/FitnessTrackerAppTests.xctest"; sourceTree = "<absolute>"; };
-		3AD07A5825C379B70099487E /* FitnessTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FitnessTrackerAppUITests.xctest; path = "/Users/qubsys/Desktop/FitnessTrackerApp/build/Debug-iphoneos/FitnessTrackerAppUITests.xctest"; sourceTree = "<absolute>"; };
+		3AD07A6525C37B880099487E /* FitnessTrackerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FitnessTrackerAppTests.xctest; path = "/Users/qubsys/Documents/OneDrive/FitnessTrackerApp/build/Debug-iphoneos/FitnessTrackerAppTests.xctest"; sourceTree = "<absolute>"; };
+		3AD07A6625C37B880099487E /* FitnessTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FitnessTrackerAppUITests.xctest; path = "/Users/qubsys/Documents/OneDrive/FitnessTrackerApp/build/Debug-iphoneos/FitnessTrackerAppUITests.xctest"; sourceTree = "<absolute>"; };
 		500BB12D24A4CDAD00083FDF /* CGImage+DrawPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+DrawPoint.swift"; sourceTree = "<group>"; };
 		50163ABB24A34B1C006C9708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50163ABD24A34B1C006C9708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			);
 			name = FitnessTrackerAppTests;
 			productName = VisionPoseTests;
-			productReference = 3AD07A5725C379B70099487E /* FitnessTrackerAppTests.xctest */;
+			productReference = 3AD07A6525C37B880099487E /* FitnessTrackerAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		50163AD824A34B1D006C9708 /* FitnessTrackerAppUITests */ = {
@@ -162,7 +162,7 @@
 			);
 			name = FitnessTrackerAppUITests;
 			productName = VisionPoseUITests;
-			productReference = 3AD07A5825C379B70099487E /* FitnessTrackerAppUITests.xctest */;
+			productReference = 3AD07A6625C37B880099487E /* FitnessTrackerAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
