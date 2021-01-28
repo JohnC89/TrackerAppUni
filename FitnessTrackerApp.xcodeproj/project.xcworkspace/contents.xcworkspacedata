@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/qubsys/Documents/OneDrive/ACTUAL APP/VisionPose-main/FitnessTrackerApp.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
