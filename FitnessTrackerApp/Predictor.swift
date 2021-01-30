@@ -9,7 +9,7 @@ import Foundation
 import CoreML
 import Vision
 
-typealias EstimationModel = ActionTrainedModel_1 //SquatLunge1
+typealias EstimationModel = Mark3MoveTracker_1 //SquatLunge1
 
 final class Predictor {
     

@@ -10,6 +10,7 @@
 		3ACC39D725BA304D00433F7C /* ActionTrainedModel 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3ACC39D625BA304D00433F7C /* ActionTrainedModel 1.mlmodel */; };
 		3ACC39F125C1BD3B00433F7C /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBA8E22536F04600407BD9 /* Predictor.swift */; };
 		3ACC39F225C1BD3C00433F7C /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADBA8E22536F04600407BD9 /* Predictor.swift */; };
+		3AD07A6E25C49D0C0099487E /* Mark3MoveTracker 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3AD07A6D25C49D0C0099487E /* Mark3MoveTracker 1.mlmodel */; };
 		500BB12E24A4CDAD00083FDF /* CGImage+DrawPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BB12D24A4CDAD00083FDF /* CGImage+DrawPoint.swift */; };
 		50163ABC24A34B1C006C9708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50163ABB24A34B1C006C9708 /* AppDelegate.swift */; };
 		50163ABE24A34B1C006C9708 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50163ABD24A34B1C006C9708 /* SceneDelegate.swift */; };
@@ -44,6 +45,7 @@
 		3ACC39F925C1BD6E00433F7C /* FitnessTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD07A6525C37B880099487E /* FitnessTrackerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FitnessTrackerAppTests.xctest; path = "/Users/qubsys/Documents/OneDrive/FitnessTrackerApp/build/Debug-iphoneos/FitnessTrackerAppTests.xctest"; sourceTree = "<absolute>"; };
 		3AD07A6625C37B880099487E /* FitnessTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FitnessTrackerAppUITests.xctest; path = "/Users/qubsys/Documents/OneDrive/FitnessTrackerApp/build/Debug-iphoneos/FitnessTrackerAppUITests.xctest"; sourceTree = "<absolute>"; };
+		3AD07A6D25C49D0C0099487E /* Mark3MoveTracker 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "Mark3MoveTracker 1.mlmodel"; path = "CoreML File/Mark3MoveTracker 1.mlmodel"; sourceTree = SOURCE_ROOT; };
 		500BB12D24A4CDAD00083FDF /* CGImage+DrawPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+DrawPoint.swift"; sourceTree = "<group>"; };
 		50163ABB24A34B1C006C9708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50163ABD24A34B1C006C9708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3ACC39D625BA304D00433F7C /* ActionTrainedModel 1.mlmodel */,
+				3AD07A6D25C49D0C0099487E /* Mark3MoveTracker 1.mlmodel */,
 				50163ABB24A34B1C006C9708 /* AppDelegate.swift */,
 				50163ABD24A34B1C006C9708 /* SceneDelegate.swift */,
 				50163ABF24A34B1C006C9708 /* ViewController.swift */,
@@ -247,6 +250,7 @@
 				9ADBA8E32536F04600407BD9 /* Predictor.swift in Sources */,
 				3ACC39D725BA304D00433F7C /* ActionTrainedModel 1.mlmodel in Sources */,
 				50705B3C24A4BFCB00EA50B7 /* AVCaptureVideoOrientation+Extension.swift in Sources */,
+				3AD07A6E25C49D0C0099487E /* Mark3MoveTracker 1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
