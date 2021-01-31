@@ -8,7 +8,7 @@
 import UIKit
 import Vision
 
-class ViewController: UIViewController {
+class MainCameraViewController: UIViewController {
 
     var imageSize = CGSize.zero
 
@@ -155,7 +155,7 @@ class ViewController: UIViewController {
 
 // MARK: - VideoCaptureDelegate
 
-extension ViewController: VideoCaptureDelegate {
+extension MainCameraViewController: VideoCaptureDelegate {
     func videoCapture(_ videoCapture: VideoCapture, didCaptureFrame capturedImage: CGImage?) {
 
         guard let image = capturedImage else {
