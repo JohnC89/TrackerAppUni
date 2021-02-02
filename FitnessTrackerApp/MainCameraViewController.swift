@@ -194,22 +194,20 @@ extension MainCameraViewController: VideoCaptureDelegate {
 
                 if ((plankState == false) && (self.actionLabel.text == "Plank")){
                     plankCount+=1
-                (self.actionLabel.text?.append(" \(plankCount)"))
                     plankState = true
                 
                     print("plank Count \(plankCount)")
-                    self.actionLabel.text?.append("\(plankCount)")
+                    self.plankCountLabel.text = "Planks: \(plankCount)"
                     
                     pressUpState = false
                 }
             
             if ((pressUpState == false) && (self.actionLabel.text == "Press-Up")){
                 pressUpCount+=1
-            (self.actionLabel.text?.append(" \(pressUpCount)"))
                 pressUpState = true
             
                 print("Press-Up Count \(pressUpCount)")
-                self.pressupCountLabel.text?.append("\(pressUpCount)")
+                self.pressupCountLabel.text = "PressUps: \(pressUpCount)"
                 
                 plankState = false
             }
