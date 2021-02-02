@@ -95,8 +95,26 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltx-Mk-qGv">
-                                <rect key="frame" x="0.0" y="665" width="390" height="21"/>
+                                <rect key="frame" x="0.0" y="650" width="390" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Plank Count: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLN-26-oZA">
+                                <rect key="frame" x="22" y="63" width="142" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="toJ-HX-QrV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Press-Up Count: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-cY-jNt">
+                                <rect key="frame" x="22" y="92" width="142" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="gUU-0L-BF3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -127,13 +145,15 @@
                     <connections>
                         <outlet property="actionLabel" destination="ltx-Mk-qGv" id="dfJ-AU-5KR"/>
                         <outlet property="finalPoints" destination="xpy-5R-sW3" id="UWt-Wg-9Zp"/>
+                        <outlet property="plankCountLabel" destination="oLN-26-oZA" id="HH1-Bu-T2p"/>
+                        <outlet property="pressupCountLabel" destination="jd8-cY-jNt" id="HVd-xu-h4j"/>
                         <outlet property="previewImageView" destination="dTy-yy-CWw" id="IUe-qF-ac6"/>
                         <outlet property="resultPoints" destination="6Sf-md-J61" id="H8e-jW-QSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.521327014218009" y="109.23076923076923"/>
+            <point key="canvasLocation" x="40" y="108.76777251184834"/>
         </scene>
     </scenes>
     <resources>

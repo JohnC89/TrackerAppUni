@@ -15,29 +15,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Group Graphic 2" translatesAutoresizingMaskIntoConstraints="NO" id="Ms2-D3-FbU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Colour" translatesAutoresizingMaskIntoConstraints="NO" id="rbx-ds-InA">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Ms2-D3-FbU" secondAttribute="height" multiplier="195:422" id="YgK-g6-5CS"/>
-                                </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jBS-pW-Bsk">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9c-CG-syI">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="422"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo 1 without text" translatesAutoresizingMaskIntoConstraints="NO" id="ddy-eE-dX4">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="422"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ddy-eE-dX4" secondAttribute="bottom" id="2Zc-IH-sSu"/>
+                                            <constraint firstItem="ddy-eE-dX4" firstAttribute="leading" secondItem="q9c-CG-syI" secondAttribute="leading" id="6hi-Nd-85M"/>
+                                            <constraint firstAttribute="trailing" secondItem="ddy-eE-dX4" secondAttribute="trailing" id="AXj-ZZ-1Tc"/>
+                                            <constraint firstItem="ddy-eE-dX4" firstAttribute="top" secondItem="q9c-CG-syI" secondAttribute="top" id="bQQ-AG-8Fq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THI-XX-Dqy">
+                                        <rect key="frame" x="0.0" y="422" width="390" height="422"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Graphic3" translatesAutoresizingMaskIntoConstraints="NO" id="ydC-jj-5gV">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="422"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ydC-jj-5gV" firstAttribute="top" secondItem="THI-XX-Dqy" secondAttribute="top" id="NKA-AW-SOJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="ydC-jj-5gV" secondAttribute="trailing" id="cWv-fF-qAA"/>
+                                            <constraint firstAttribute="bottom" secondItem="ydC-jj-5gV" secondAttribute="bottom" id="hE7-0y-ojw"/>
+                                            <constraint firstItem="ydC-jj-5gV" firstAttribute="leading" secondItem="THI-XX-Dqy" secondAttribute="leading" id="oyJ-yS-g0z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ms2-D3-FbU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PFm-sL-ARm"/>
-                            <constraint firstAttribute="trailing" secondItem="Ms2-D3-FbU" secondAttribute="trailing" id="ipV-ZY-wHU"/>
-                            <constraint firstItem="Ms2-D3-FbU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="vx3-dT-yy6"/>
-                            <constraint firstItem="Ms2-D3-FbU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xJf-za-J1O"/>
+                            <constraint firstAttribute="trailing" secondItem="rbx-ds-InA" secondAttribute="trailing" id="BHF-yE-L9F"/>
+                            <constraint firstItem="jBS-pW-Bsk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="EIw-WF-U8C"/>
+                            <constraint firstAttribute="trailing" secondItem="jBS-pW-Bsk" secondAttribute="trailing" id="SpG-cA-ydm"/>
+                            <constraint firstAttribute="bottom" secondItem="jBS-pW-Bsk" secondAttribute="bottom" id="Vjc-mh-33V"/>
+                            <constraint firstItem="rbx-ds-InA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="XHx-fR-PDm"/>
+                            <constraint firstItem="jBS-pW-Bsk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cVc-d4-pjg"/>
+                            <constraint firstItem="rbx-ds-InA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ewg-NX-GyS"/>
+                            <constraint firstAttribute="bottom" secondItem="rbx-ds-InA" secondAttribute="bottom" id="fXY-oS-5d2"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.307692307692307" y="374.64454976303318"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Group Graphic 2" width="1170" height="2532"/>
+        <image name="Background Colour" width="1170" height="2532"/>
+        <image name="Graphic3" width="390" height="540"/>
+        <image name="Logo 1 without text" width="1024" height="1024"/>
     </resources>
 </document>

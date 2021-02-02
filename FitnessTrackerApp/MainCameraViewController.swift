@@ -11,6 +11,12 @@ import Vision
 class MainCameraViewController: UIViewController {
 
     var imageSize = CGSize.zero
+    
+    var plankCount = 0
+    var pressUpCount = 0
+    
+    var plankState = false
+    var pressUpState = false
 
     @IBOutlet weak var previewImageView: UIImageView!
     
@@ -25,6 +31,10 @@ class MainCameraViewController: UIViewController {
     @IBOutlet weak var actionLabel: UILabel!
     let predictor = Predictor()
     var poseObservations = [VNHumanBodyPoseObservation]()
+    
+    @IBOutlet weak var plankCountLabel: UILabel!
+    @IBOutlet weak var pressupCountLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -177,9 +187,34 @@ extension MainCameraViewController: VideoCaptureDelegate {
         let confidence = predictions.labelProbabilities[label] ?? 0
 //        print(confidence, label)
         let isOverThreshold = confidence > 0.5
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [self] in
             self.actionLabel.isHidden = !isOverThreshold
             self.actionLabel.text = isOverThreshold ? label : ""
+            
+
+                if ((plankState == false) && (self.actionLabel.text == "Plank")){
+                    plankCount+=1
+                (self.actionLabel.text?.append(" \(plankCount)"))
+                    plankState = true
+                
+                    print("plank Count \(plankCount)")
+                    self.actionLabel.text?.append("\(plankCount)")
+                    
+                    pressUpState = false
+                }
+            
+            if ((pressUpState == false) && (self.actionLabel.text == "Press-Up")){
+                pressUpCount+=1
+            (self.actionLabel.text?.append(" \(pressUpCount)"))
+                pressUpState = true
+            
+                print("Press-Up Count \(pressUpCount)")
+                self.pressupCountLabel.text?.append("\(pressUpCount)")
+                
+                plankState = false
+            }
+            
+            
         }
     }
     
