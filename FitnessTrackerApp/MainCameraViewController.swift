@@ -191,8 +191,20 @@ extension MainCameraViewController: VideoCaptureDelegate {
             self.actionLabel.isHidden = !isOverThreshold
             self.actionLabel.text = isOverThreshold ? label : ""
             
-
-                if ((plankState == false) && (self.actionLabel.text == "Plank")){
+            let actionLabelCurrent = self.actionLabel.text
+            
+            let reps = repCounter(actionLabelCurrent: actionLabelCurrent!)
+        
+            if reps.movement == "Plank" {
+            
+                self.plankCountLabel.text = "Planks: \(reps.count)"
+                
+            }else if reps.movement == "Press-Up" {
+                self.pressupCountLabel.text = "PressUps: \(reps.count)"
+            }
+            
+            
+         /*       if ((plankState == false) && (self.actionLabel.text == "Plank")){
                     plankCount+=1
                     plankState = true
                 
@@ -212,7 +224,7 @@ extension MainCameraViewController: VideoCaptureDelegate {
                 plankState = false
             }
             
-            
+         */
         }
     }
     
